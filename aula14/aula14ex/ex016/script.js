@@ -17,12 +17,13 @@ function contador() {
         }
         if (i < f) {
             //Contagem crescente
+            resultado.innerHTML += `Contando de ${i} até ${f} de ${p} em ${p}:<br>`
             for (let c = i; c <= f; c += p) {
-                resultado.innerHTML = `Contando de ${i} até ${f} de ${p} em ${p}:<br>`
                 resultado.innerHTML += `${c} \u{1F449}`
             }                       
         } else {
             //Contagem regressiva
+            resultado.innerHTML += `Contando de ${f} até ${i} de ${p} em ${p}:<br>`
             for (let c=i; c >= f; c -= p) {
                 resultado.innerHTML += `${c} \u{1f449}`
             }
