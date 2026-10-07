@@ -9,13 +9,24 @@ function contador() {
     } else {
         resultado.innerHTML = 'Contando: '
         let i = Number(inicio.value)
-        let fim = Number(fim.value)
-        let passo = Number(passo.value)
-        
-        for (let c = inicio; c <= fim; c += passo) {
-            resultado.innerHTML += `${c}`
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+        if (p <= 0) {
+            alert('Passo inválido! Considerando PASSO 1')
+            p = 1
         }
+        if (i < f) {
+            //Contagem crescente
+            for (let c = i; c <= f; c += p) {
+                resultado.innerHTML = `Contando de ${i} até ${f} de ${p} em ${p}:<br>`
+                resultado.innerHTML += `${c} \u{1F449}`
+            }                       
+        } else {
+            //Contagem regressiva
+            for (let c=i; c >= f; c -= p) {
+                resultado.innerHTML += `${c} \u{1f449}`
+            }
+        }
+        resultado.innerHTML += `\u{1F3C1}`
     }
 }
-
-/*resultado.innerHTML = `Contando de ${inicio} até ${fim} de ${passo} em ${passo}: <br>.`}*/
