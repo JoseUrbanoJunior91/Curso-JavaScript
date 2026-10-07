@@ -1,1 +1,3 @@
-alert('Ola!)
+function gerar() {
+    alert('Ola!')
+}
