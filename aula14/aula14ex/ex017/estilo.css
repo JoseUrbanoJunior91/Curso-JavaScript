@@ -15,9 +15,10 @@ section {
     background: rgba(255, 255, 255, 0.452);
     border-radius: 30px;
     padding: 15px;
-    width: 500px;
+    max-width: 400px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, o.363);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    font-family: 'Segoe UI';
 }
 
 
