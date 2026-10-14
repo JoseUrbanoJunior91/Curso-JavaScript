@@ -1,0 +1,36 @@
+body {
+    background: rgb(161, 1, 1);
+    font: normal 15 pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: bold;
+    font-style: italic;
+    text-shadow: black 50px;
+
+}
+
+
+section {
+    background: rgba(207, 22, 22, 0.63);
+    border-radius: 40px;
+    padding: 15px;
+    width: 500px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, o.363);
+    font-family: 'Segoe UI';
+    font-style: bold;
+    color: white;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
